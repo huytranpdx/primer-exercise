@@ -18,32 +18,51 @@ html h1 {
 body {
   font-size: 1.1em;
   font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
-  background-color: #0f0f0f
+  background-color: black
 }
 
 /* The container sits in the middle of the page and is a fixed width Reference: http://www.w3schools.com/css/css_boxmodel.asp
 */
 
+nav {
+  width: 30%;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  height: 175px; 
+  width: 175px;
+  border: 1px solid black;
+  background-color: white;
+}
+
 .container {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #aaaaaa;
+  background-color: #eee;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-
+  overflow: auto;
 }
 
 /* The next set of styles pretty much just "open up" the page and create white space */
 
-.header {
+header {
   margin: 20px;
+  background-color: #FEDBD8;
+  clear: both;
 }
  	
 .page_heading {
-    margin-right: 20px;
+    margin-left: 20px;
+    float: right;
+    overflow: auto;
 } 
+
+.banner {
+  float: left;
+}
 	
 .contact_information {
     margin-left: 20px;
@@ -55,25 +74,25 @@ body {
   float: right;
 }
 
-.article {
+article {
   margin: 20px;
+  width: 70%;
+  float: right;
 }
 
 .article_heading {
-  width: 600px;
+  width: 80%;
   margin-left: 20px;
   padding: 10px;
   border: 1px solid black;
-  background-color: #dddddd;
-
+  background-color: #dddddd;  
 }
 
 .article_content {
   margin: 0 20px 0 20px;
   padding: 10px;
   border: 1px solid gray;
-  background-color: #ffffff;
-
+  background-color: #ffa500;
 }
 
 .prompt_text {
@@ -100,11 +119,13 @@ form {
 
 
 /* finally, the footer stretches across the whole page width in an open, centered sort of way. */
-.footer {
+footer {
   font-size: .80em;
   min-height: 40px;
   text-align: center;
   margin: 20px;
+  background-color: red;
+  clear: both;
 
 }
 
